@@ -11,16 +11,38 @@ def findGcd(n1, n2):
         
     return 1
 
-def main():
+# def main():
     
-    n1 = 8
-    n2 = 15
+#     n1 = 8
+#     n2 = 15
     
-    gcd = findGcd(n1, n2)
+#     gcd = findGcd(n1, n2)
     
-    print("GCD of", n1, "and", n2, "is:", gcd)
+#     print("GCD of", n1, "and", n2, "is:", gcd)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
     
+    
+
+
+
+def divised(n1,n2):
+    
+    
+    for i in range(min(n1,n2), 0, -1):
+        
+        
+        if n1 % i == 0 and n2 % i == 0:
+            
+            return i
+        
+    
+    return i
+
+
+n1 = 21
+n2 = 33
+
+print(divised(n1,n2))
