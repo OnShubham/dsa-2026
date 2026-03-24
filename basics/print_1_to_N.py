@@ -1,15 +1,20 @@
-def print_num(num):
+class Solution:
+    # Recursive function to print numbers from current to n using backtracking
+    def printNumbers(self, current, n):
+        # Base case: if current exceeds n, stop recursion
+        if current > n:
+            return
+    # Print current number during backtracking
+        print(current, end=' ')
+        # Recursive call with next number
+        self.printNumbers(current + 1, n)
+
     
-    ans = 0
-    
-    for i in range(num):
-        
-        ans =+ 1
-        
-    return ans
 
 
-num = 4
-print(print_num(num))
-    
-    
+if __name__ == "__main__":
+    sol = Solution()
+    n = 10
+
+    sol.printNumbers(1, n)
+    print()
