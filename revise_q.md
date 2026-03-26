@@ -9,3 +9,6 @@
 5. reverse_num
 6. reverse_arr
 
+
+# sorting 
+1. selection_sort
