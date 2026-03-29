@@ -131,3 +131,49 @@ sorted_arr = sorted_num(arr)
 
 print("latest :" , sorted_arr)
     
+    
+
+def test(arr):
+    
+    # check arr 
+    
+    if len(arr) <= 1:
+        return arr
+    
+    # mid left right
+    
+    mid = len(arr) // 2
+    left = arr[:mid]
+    right = arr[mid:]
+    
+    left_sort = test(left)
+    right_sort = test(right)
+    
+    return test_1(left_sort, right_sort)
+    
+    
+def test_1(left, right):
+    
+    empty = []
+    i = j = 0
+    
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            empty.append(left[i])
+            i += 1
+        else:
+            empty.append(right[j])
+            j += 1
+            
+    empty.extend(left[i:])
+    empty.extend(right[j:])
+    
+    return empty
+    
+
+    
+    
+arr = [2,4,5,4,3,1,2,3]
+sorted_arr = test(arr)
+
+print("latest test:" , sorted_arr)

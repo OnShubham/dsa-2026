@@ -11,4 +11,4 @@
 
 
 # sorting 
-1. selection_sort
+all sorting
