@@ -7,7 +7,7 @@ def hashing_arr_duplicaet(arr):
         else:
             freq[num] = 1
             
-    
+    d
     
     # print(freq)
     # shortlist a number 1 > 
