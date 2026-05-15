@@ -21,19 +21,34 @@ print(min_value, max_value)
 
 def max_min(arr):
     
-    min_value = arr[0]
-    max_value = arr[0]
+    # min_value = arr[0]
+    # max_value = arr[0]
+    
+    # for num in arr:
+        
+    #     if num < min_value:
+    #         min_value = num
+    #     if num > max_value:
+    #         max_value = num
+    # print(min_value, max_value)
+    
+    
+    
+    max = arr[0]
+    min = arr[0]
+    
     
     for num in arr:
         
-        if num < min_value:
-            min_value = num
-        if num > max_value:
-            max_value = num
-    print(min_value, max_value)
+        if num < max:
+            max = num
+        if num > min:
+            min = num
+    print(max, min, "p")
+            
 
 
-arr=[4,3,2,1,5,6,7,3,2] 
+arr=[4,3,2,1,5,8,6,7,3,2] 
     
 max_min(arr)
 
@@ -55,3 +70,24 @@ for num in arr:
         min_value = num
 
 print(max_vale,min_value)
+
+
+
+
+def practice(arr):
+    
+    max = arr[0]
+    min = arr[0]
+    
+    
+    for num in arr:
+        
+        if num < max:
+            max = num
+        if num > min:
+            min = num
+    return print(max, min)
+
+
+arr = [2,5,8,4,6]
+practice(arr)
